@@ -3,19 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parcial DDW</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
-    <header>
-        <div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+    <header class="encabezado-sitio">
+        <div class="contenedor encabezado-interno">
+            <h1 class="titulo-sitio">FICHA PERSONAL</h1>
+            <ul class="lista-navegacion">
+                <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+                <li><a href="contacto.html" class="enlace-navegacion">Contacto</a></li>
+                <li><button class="boton-tema" id="themeToggle">🌓</button></li>
             </ul>
         </div>
     </header>
+    <div class="contenedor ficha-full">
+
+    <div class="tarjeta ficha-personal">
+        <h2 class="ficha-nombre">Ivan Daza</h2>
+
+        <div class="ficha-contenido">
+
+            <div class="ficha-datos">
+                <p><span class="ficha-label">Legajo:</span> 1146519</p>
+                <p><span class="ficha-label">Carrera:</span> Ingenieria Informatica</p>
+                <p><span class="ficha-label">Materia:</span> Diseño y desarrollo Web</p>
+                <p><span class="ficha-label">Curso:</span> 16505</p>
+            </div>
+
+            <div class="ficha-foto">
+                <img src="/imgs/fotopersonal.jpg" alt="Foto de perfil" />
+            </div>
+
+        </div>
+
+        <div class="ficha-botones">
+            <a href="https://ivandaza4.github.io/Mi-Serie/" class="boton boton-primario">Fan Page</a>
+            <a href="https://ivandaza4.github.io/Local_Comercial/" class="boton boton-primario">Local Comercial</a>
+        </div>
+
+    </div>
+
+    <footer class="pie-sitio ficha-footer">
+        <img src="/imgs/uade.svg" alt="UADE" class="logo-footer">
+        <p>Todos los derechos reservados</p>
+        <img src="/imgs/git.png" alt="GitHub" class="logo-footer">
+    </footer>
+
+    <script src="js/theme.js"></script>
+</div>
 </body>
+
 </html>

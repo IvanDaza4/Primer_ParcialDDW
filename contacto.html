@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="encabezado-sitio">
+        <div class="contenedor encabezado-interno">
+            <h1 class="titulo-sitio">FICHA PERSONAL</h1>
+            <ul class="lista-navegacion">
+                <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+                <li><a href="contacto.html" class="enlace-navegacion">Contacto</a></li>
+                <li><button class="boton-tema" id="themeToggle">🌓</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="contenedor contenido-principal">
+
+        <h2 class="titulo-encabezado-seccion">FICHA PERSONAL</h2>
+        <h2 class="ficha-nombre">Ivan Daza</h2>
+
+        <div class="formulario-caja-visual">
+
+            <form id="formulario" class="formulario-visual">
+
+                <div class="fila-form">
+                    <label class="etiqueta-campo">Nombre y apellido:</label>
+                    <input type="text" id="nombre" class="campo-entrada">
+                    <span id="error-nombre" class="mensaje-error oculto"></span>
+
+                </div>
+
+                <div class="fila-form">
+                    <label class="etiqueta-campo">Edad:</label>
+                    <input type="number" id="edad" class="campo-entrada">
+                    <span id="error-edad" class="mensaje-error oculto"></span>
+                </div>
+
+                <div class="fila-form">
+                    <label class="etiqueta-campo">Email:</label>
+                    <input type="email" id="email" class="campo-entrada">
+                    <span id="error-email" class="mensaje-error oculto"></span>
+                </div>
+
+                <div class="fila-form">
+                    <label class="etiqueta-campo">Comentario:</label>
+                    <textarea id="mensaje" class="campo-entrada campo-area-texto" rows="4"></textarea>
+                    <span id="error-mensaje" class="mensaje-error oculto"></span>
+                </div>
+
+                <div class="botones-visual">
+                    <button type="submit" class="boton boton-primario">ENVIAR</button>
+                    <button type="reset" class="boton boton-primario">BORRAR</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <footer class="pie-sitio ficha-footer">
+        <img src="/imgs/uade.svg" alt="UADE" class="logo-footer">
+        <p>Todos los derechos reservados</p>
+        <img src="/imgs/git.png" alt="GitHub" class="logo-footer">
+    </footer>
+
+</body>
+
+    <script src="js/validacion.js"></script>
+    <script src="/js/theme.js"></script>
+
+</html>
